@@ -131,13 +131,54 @@ do
                     petCount += 1;
                 }
             }
-            if (petCount < maxPets)
-            {
-                while (anotherPet == "y" && petCount < maxPets)
-                {
-                    petCount += 1;
+            Console.WriteLine($"We currently have {petCount} pets that need homes. We can manage {maxPets - petCount} more.");
 
-                    Console.WriteLine($"We currently have {petCount} pets that need homes. We can manage {maxPets - petCount} more.");
+            while (anotherPet == "y" && petCount < maxPets)
+            {
+                bool validEntry = false;
+                do
+                {
+                    Console.WriteLine("\n\rEnter 'dog' or 'cat' to begin a new entry");
+                    readResult = Console.ReadLine();
+                    if (readResult != null)
+                    {
+                        animalSpecies = readResult.ToLower();
+                        if (animalSpecies != "dog" && animalSpecies != "cat")
+                        {
+                            validEntry = false;
+                        }
+                        else
+                        {
+                            validEntry = true;
+                        }
+                    }
+                } while (validEntry == false);
+
+                animalID = animalSpecies.Substring(0, 1) + (petCount + 1).ToString();
+
+                do
+                {
+                    int petAge;
+                    Console.WriteLine("Enter the pet's age or enter ? if unknown");
+                    readResult = Console.ReadLine();
+                    if (readResult != null)
+                    {
+                        animalAge = readResult;
+                        if (animalAge != "?")
+                        {
+                            validEntry = int.TryParse(animalAge, out petAge);
+                        }
+                        else
+                        {
+                            validEntry = true;
+                        }
+                    }
+                }while (validEntry == false);
+                petCount += 1;
+
+                if (petCount < maxPets)
+                {
+                    ;
                     Console.WriteLine("Do you want to enter info for another pet (y/n)");
                     do
                     {
