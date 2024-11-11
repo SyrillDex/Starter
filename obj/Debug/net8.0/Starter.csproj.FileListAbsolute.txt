@@ -12,3 +12,4 @@ C:\Users\LENOVO\OneDrive\Desktop\Guided-project-branching-looping-CSharp-main\Gu
 C:\Users\LENOVO\OneDrive\Desktop\Guided-project-branching-looping-CSharp-main\GuidedProject\Starter\obj\Debug\net8.0\Starter.pdb
 C:\Users\LENOVO\OneDrive\Desktop\Guided-project-branching-looping-CSharp-main\GuidedProject\Starter\obj\Debug\net8.0\Starter.genruntimeconfig.cache
 C:\Users\LENOVO\OneDrive\Desktop\Guided-project-branching-looping-CSharp-main\GuidedProject\Starter\obj\Debug\net8.0\ref\Starter.dll
+C:\Users\LENOVO\OneDrive\Desktop\Guided-project-branching-looping-CSharp-main\GuidedProject\Starter\obj\Debug\net8.0\Starter.sourcelink.json
